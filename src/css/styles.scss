@@ -44,3 +44,71 @@ $blue: #4261ab;
 		color: $blue;
 	}
 }
+
+/* Styling the Body element i.e. Color,
+		Font, Alignment */
+body {
+	background-color: #211d1d;
+	text-align: left;
+	color: white;
+}
+
+.fixed {
+	img {
+		display: block;
+		max-width: 60%;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		margin-left: 18%;
+	}
+}
+
+form {
+	border: 2px solid orange;
+	border-radius: 25px;
+	max-width: 300px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling form-control Class */
+.form-control {
+	text-align: left;
+	margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+/* Styling form-control Radio
+				 button and Checkbox */
+.form-control input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+}
+
+.choice {
+	text-align: center;
+}
+
+.ready {
+	text-align: center;
+}
+
+/* Styling Button */
+button {
+	background-color: orange;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	font-size: 21px;
+	display: block;
+	width: 120px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 38%;
+}
