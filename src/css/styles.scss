@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 	.logo {
 		background-color: black;
 		font-size: 30px;
@@ -176,4 +176,19 @@ button {
 	margin-top: 50px;
 	margin-bottom: 20px;
 	margin-left: 38%;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button2 {
+	width: 200px;
+	margin-left: 28%;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: white;
 }
