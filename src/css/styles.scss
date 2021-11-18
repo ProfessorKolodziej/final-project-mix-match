@@ -64,7 +64,7 @@
 	}
 
 	.start-button {
-		margin-left: 200px;
+		margin: 0 auto;
 	}
 }
 
@@ -85,7 +85,7 @@
 @media screen and (min-width: 1200px) {
 	.body-container {
 		display: grid;
-		grid-template-columns: 42% 68%;
+		grid-template-columns: 42% 58%;
 		height: 600px;
 	}
 
@@ -100,10 +100,14 @@
 	}
 
 	.tagline {
-		padding-top: 90px;
+		padding-top: 110px;
 		padding-left: 35px;
 		padding-right: 35px;
 		font-size: 75px;
 		text-align: center;
+	}
+
+	.start-text {
+		font-size: 45px;
 	}
 }
