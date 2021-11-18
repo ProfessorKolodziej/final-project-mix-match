@@ -1,113 +1,168 @@
-.body {
-	margin: 0;
-}
+@import "homepage";
 
-@media screen and (min-width: 320px) {
-	.header-container {
-		padding-top: 10px;
-		padding-bottom: 5px;
-		background-color: black;
-	}
-
-	.logo {
-		color: #fff;
-		margin-left: 23px;
-		margin-top: 15px;
-		margin-right: 280px;
-	}
-
-	.search {
-		margin-right: 120px;
-		margin-top: -50px;
-		float: right;
-	}
-
-	.hamburger {
-		margin-right: 20px;
-		margin-top: -50px;
-		float: right;
-	}
-
-	.body-container {
-		height: 700px;
-	}
-
-	.homepage-img {
-		display: block;
-		object-fit: cover;
-		width: 100%;
-		height: 700px;
-	}
-
-	.tagline {
+@media screen and (max-width: 768px) {
+	.mainpic {
 		text-align: center;
-		color: #fff;
-		font-size: 45px;
+		margin-top: -140px;
 	}
 
-	.tagline-container {
-		background: rgba(128, 128, 128, 0.7);
-		margin-top: 300px;
+	.mainpic img {
+		border-radius: 50%;
+		max-width: 60%;
+		max-height: 80%;
+		margin: auto 0;
+	}
+
+	.drinkname {
+		font-family: freight-big-pro, serif;
+		font-size: 3em;
+		font-weight: bold;
+		font-style: normal;
+		margin-left: 20px;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	.main_content {
 		margin-left: 20px;
 		margin-right: 20px;
-		position: absolute;
+		font-family: semplicitapro, sans-serif;
+		font-weight: 400;
+		font-style: normal;
 	}
 
-	.start-container {
-		padding-top: 1em;
-		background-color: black;
+	.container {
+		text-align: center;
+		margin-left: -20px;
 	}
 
-	.start-text {
+	.container ul li {
+		display: inline;
+		justify-content: space-around;
+		font-family: semplicitapro, sans-serif;
+		font-weight: 400;
+		font-size: 1.6em;
+		font-style: normal;
 		color: orange;
-		text-align: center;
+		padding: 8%;
 	}
 
-	.start-button {
-		margin: 0 auto;
+	.ingre {
+		margin-left: 20px;
+	}
+
+	.list-ingre {
+		list-style-type: none;
+		display: flex;
+		vertical-align: middle;
+	}
+
+	.list-ingre img {
+		margin-right: 40px;
+		max-width: 50%;
+	}
+
+	.list-similar {
+		list-style-type: none;
+		display: flex;
+		vertical-align: middle;
+	}
+
+	.list-similar img {
+		margin-right: 40px;
+		max-width: 50%;
+	}
+
+	.allergy {
+		text-align: right;
+		margin-right: 20px;
+	}
+
+	.similar {
+		margin-left: 20px;
+		vertical-align: middle;
 	}
 }
 
-@media screen and (min-width: 768px) {
-	.tagline-container {
-		background: rgba(128, 128, 128, 0.7);
-		margin-top: 300px;
-		margin-left: 90px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+/* Styling the Body element i.e. Color,
+		Font, Alignment */
+body {
+	background-color: #211d1d;
+	text-align: left;
+	color: white;
+}
 
-	.tagline {
-		text-align: center;
+.fixed {
+	img {
+		display: block;
+		max-width: 60%;
+		margin-top: 50px;
+		margin-bottom: 20px;
+		margin-left: 18%;
 	}
 }
 
-@media screen and (min-width: 1200px) {
-	.body-container {
-		display: grid;
-		grid-template-columns: 42% 58%;
-		height: 600px;
-	}
+form {
+	border: 2px solid orange;
+	border-radius: 25px;
+	max-width: 300px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
 
-	.homepage-img {
-		height: 600px;
-	}
+/* Styling form-control Class */
+.form-control {
+	text-align: left;
+	margin-bottom: 25px;
+}
 
-	.tagline-container {
-		background-color: black;
-		margin: 0;
-		position: relative;
-	}
+/* Styling form-control Label */
+.form-control label {
+	display: block;
+	margin-bottom: 10px;
+}
 
-	.tagline {
-		padding-top: 110px;
-		padding-left: 35px;
-		padding-right: 35px;
-		font-size: 75px;
-		text-align: center;
-	}
+/* Styling form-control Radio
+				 button and Checkbox */
+.form-control input[type="checkbox"] {
+	display: inline-block;
+	width: auto;
+}
 
-	.start-text {
-		font-size: 45px;
-	}
+.choice {
+	text-align: center;
+}
+
+.ready {
+	text-align: center;
+}
+
+/* Styling Button */
+button {
+	background-color: orange;
+	border: 1px solid #777;
+	border-radius: 2px;
+	font-family: inherit;
+	font-size: 21px;
+	display: block;
+	width: 120px;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	margin-left: 38%;
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button2 {
+	width: 200px;
+	margin-left: 28%;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: white;
 }
