@@ -92,29 +92,62 @@ body {
 	color: white;
 }
 
-.fixed {
-	img {
-		display: block;
-		max-width: 60%;
-		margin-top: 50px;
-		margin-bottom: 20px;
-		margin-left: 18%;
-	}
+#myImage {
+	display: block;
+	width: 60%;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: 20vw;
+	position: relative;
 }
 
-form {
+#mycolor {
+	position: absolute;
+	top: 20%;
+	left: 41vw;
+	max-width: 16%;
+	z-index: -1;
+}
+
+#myfruit {
+	position: absolute;
+	top: 5%;
+	left: 48vw;
+	max-width: 16%;
+	z-index: -1;
+}
+
+.form-container {
+	width: 195px;
+	height: 230px;
 	border: 2px solid orange;
 	border-radius: 25px;
-	max-width: 300px;
-	margin: 50px auto;
-	padding: 30px 20px;
+	max-width: 350px;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 20px;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+}
+
+/* form {
+	width: 200px;
+	border: 1px solid royalblue;
+	margin: 10vm;
+} */
+
+.questions {
+	display: flex;
+	transition: all 0.5s ease;
 }
 
 /* Styling form-control Class */
 .form-control {
 	text-align: left;
 	margin-bottom: 25px;
+	width: 200px;
 }
 
 /* Styling form-control Label */
@@ -123,19 +156,48 @@ form {
 	margin-bottom: 10px;
 }
 
-/* Styling form-control Radio
-				 button and Checkbox */
-.form-control input[type="checkbox"] {
+.form-control input {
 	display: inline-block;
 	width: auto;
+	margin-left: 15px;
 }
 
 .choice {
 	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 15px;
+	padding-top: 10px;
 }
 
 .ready {
 	text-align: center;
+}
+
+.radio-buttons {
+	position: absolute;
+	top: 1580px;
+	left: 195px;
+	display: none;
+}
+
+.r {
+	margin: 7px;
+	width: 10px;
+	height: 10px;
+	border: none;
+	background: grey;
+	box-shadow: 0 0 10px black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.control {
+	display: flex;
+	margin-left: 42%;
+}
+
+.active {
+	background: orange;
 }
 
 /* Styling Button */
