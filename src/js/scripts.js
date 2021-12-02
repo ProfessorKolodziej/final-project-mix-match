@@ -276,7 +276,7 @@ const same = [];
 const similar = [];
 // let uniqsimilar = [];
 $(document).ready(() => {
-  $('#resultpage').hide();
+  $('#resultshow').hide();
   $('#questions').html(
     `<h1 style="text-align:center;">${quiz[i].question}</h1>`,
   );
@@ -297,7 +297,6 @@ $(document).ready(() => {
     `<p style="text-align:center;">${quiz[i].answers[3]}</p>`,
   );
 
-  $('#shake').hide();
   $('.choices').show('slow');
   $(document).on('click', '#next', () => {
     const answer = $('input[name="answers"]:checked').val();
@@ -340,7 +339,7 @@ $(document).ready(() => {
     if (i > 3) {
       $('#quiz').remove();
 
-      $('#resultpage').show();
+      $('#resultshow').show();
 
       $('.fixed').hide();
 
@@ -401,24 +400,48 @@ $(document).ready(() => {
         $('.main_content1').html(
           `<p class="main_content" >${Object.values(same[0])[8]}</p>`,
         );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li></ul>`,
+        );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][1]}"></img></li></ul>`,
+        );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][2]}"></img></li></ul>`,
+        );
+        $('.list-similar').html(
+          `<ul class="list-similar" ><li><img src="${Object.values(similar[0])[7]}"></img></li></ul>`,
+        );
       } else {
-        $('.mainpic').html(
+        $('.mainpic1').html(
           `<img src="${Object.values(similar[0])[7]}"></img>`,
         );
-        $('.drinkname').html(
+        $('.drinkname1').html(
           `<h2>${Object.values(similar[0])[1]}</h2>`,
         );
-        $('.alcohol_name').html(
+        $('.alcohol_name1').html(
           `<li>${Object.values(similar[0])[1]}</li>`,
         );
-        $('.flavor').html(
+        $('.flavor1').html(
           `<li>${Object.values(similar[0])[5]}</li>`,
         );
-        $('.alcohol_level').html(
+        $('.alcohol_level1').html(
           `<li>${Object.values(similar[0])[2]}</li>`,
         );
-        $('.main_content1').html(
+        $('.main_content11').html(
           `<p class="main_content" >${Object.values(similar[0])[8]}</p>`,
+        );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(similar[0])[6][0]}"></img></li></ul>`,
+        );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(similar[0])[6][1]}"></img></li></ul>`,
+        );
+        $('.list-ingre').html(
+          `<ul class="list-ingre" ><li><img src="${Object.values(similar[0])[6][2]}"></img></li></ul>`,
+        );
+        $('.list-similar').html(
+          `<ul class="list-similar" ><li><img src="${Object.values(similar[1])[7]}"></img></li></ul>`,
         );
       }
     }

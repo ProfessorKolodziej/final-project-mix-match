@@ -1,6 +1,10 @@
 @import "homepage";
 //@import "resultpage";
 
+#resultshow {
+	background-color: white;
+}
+
 .logo {
 	background-color: black;
 	font-size: 30px;
@@ -33,12 +37,12 @@
 	margin-right: 5px;
 }
 
-.mainpic {
+.mainpic1 {
 	text-align: center;
 	margin-top: -130px;
 }
 
-.mainpic img {
+.mainpic1 img {
 	border-radius: 50%;
 	width: 300px;
 	height: 300px;
@@ -46,7 +50,7 @@
 	margin-top: -20px;
 }
 
-.drinkname {
+.drinkname1 {
 	font-family: freight-big-pro, serif;
 	font-weight: 600;
 	font-style: normal;
@@ -57,7 +61,7 @@
 	color: black;
 }
 
-.main_content {
+.main_content1 {
 	margin-left: 20px;
 	margin-right: 20px;
 	font-family: semplicitapro, sans-serif;
@@ -168,11 +172,11 @@
 		padding-bottom: 200px;
 	}
 
-	.mainpic {
+	.mainpic1 {
 		margin-top: -200px;
 	}
 
-	.mainpic img {
+	.mainpic1 img {
 		width: 330px;
 		height: 330px;
 		margin-top: 30px;
@@ -180,7 +184,7 @@
 		right: 20px;
 	}
 
-	.drinkname {
+	.drinkname1 {
 		position: relative;
 		text-align: center;
 		margin-top: 220px;
@@ -188,13 +192,13 @@
 		padding-right: 330px;
 	}
 
-	.main_content {
+	.main_content1 {
 		font-size: 18px;
 		text-align: center;
 		padding-right: 330px;
 	}
 
-	.container {
+	.container1 {
 		margin-top: 40px;
 		font-size: 18px;
 	}
@@ -246,17 +250,17 @@
 		padding: 15px;
 	}
 
-	.mainpic {
+	.mainpic1 {
 		margin-top: auto;
 	}
 
-	.mainpic img {
+	.mainpic1 img {
 		border-radius: 0%;
 		width: 500px;
 		height: 500px;
 	}
 
-	.drinkname {
+	.drinkname1 {
 		font-size: 70px;
 		position: relative;
 		text-align: center;
@@ -264,7 +268,7 @@
 		padding-right: 500px;
 	}
 
-	.main_content {
+	.main_content1 {
 		margin-left: 150px;
 		margin-right: 660px;
 		margin-top: 46px;
@@ -272,13 +276,13 @@
 		padding-right: 0;
 	}
 
-	.container {
+	.container1 {
 		margin-top: 170px;
-		font-size: 30px;
+		font-size: 1vw;
 		text-align: center;
 	}
 
-	.container ul li {
+	.container1 ul li {
 		margin: 90px;
 		padding: 0%;
 	}
