@@ -6,11 +6,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
-	<title>Find your cocktail</title>
+	<link rel="stylesheet" href="https://use.typekit.net/eve4eso.css">
+	<link rel="stylesheet" href="https://use.typekit.net/tud7wng.css">
+	<title>Mix&Match</title>
 	<!--
-		Webpack will automatically link your CSS file for you.
-		Work in the src/css/styles.scss file.
-	-->
+			Webpack will automatically link your CSS file for you.
+			Work in the src/css/styles.scss file.
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 </head>
 
 <body>
@@ -20,11 +23,11 @@
 			<img src="images/glass.png" alt="glass">
 		</div>
 
-		<!-- Create Form -->
+		<!-- Create Form
 		<form id="form">
 			<div class="form-control">
 				<label class="choice">ABV </label>
-				<!-- Input Type Checkbox -->
+
 				<label for="inp-1">
 					<input type="checkbox" name="inp">>30%</input></label>
 				<label for="inp-2">
@@ -39,7 +42,7 @@
 		<form id="form2">
 			<div class="form-control">
 				<label class="choice">BASE</label>
-				<!-- Input Type Checkbox -->
+
 				<label for="inp-1">
 					<input type="checkbox" name="inp">Gin</input></label>
 				<label for="inp-2">
@@ -58,7 +61,7 @@
 		<form id="form3">
 			<div class="form-control">
 				<label class="choice">TASTE</label>
-				<!-- Input Type Checkbox -->
+
 				<label for="inp-1">
 					<input type="checkbox" name="inp">Sweet</input></label>
 				<label for="inp-2">
@@ -75,7 +78,7 @@
 		<form id="form3">
 			<div class="form-control">
 				<label class="choice">FLAVOR</label>
-				<!-- Input Type Checkbox -->
+
 				<label for="inp-1">
 					<input type="checkbox" name="inp">Flowery</input></label>
 				<label for="inp-2">
@@ -85,18 +88,88 @@
 				<label for="inp-4">
 					<input type="checkbox" name="inp">Milk</input></label>
 			</div>
-		</form>
-		<!-- Multi-line Text Input Control -->
-		<p class="ready">Your cocktail of the day is ready.</p>
-		<a href="result.html">
-			<button type="submit" value="submit">
-				SHAKE it!
-			</button></a>
+		</form>-->
+		<div id="quiz">
+			<div id="questions"></div>
+
+			<div name="answersFrame" id="answersFrame" class="1">
+				<input type="radio" name="answers" class="choices" value=0>
+				<p id="zero" class="pickone"></p>
+
+				<input type="radio" name="answers" class="choices" value=1>
+				<p id="one" class="pickone"></p>
+
+				<input type="radio" name="answers" class="choices" value=2>
+				<p id="two" class="pickone"></p>
+
+				<input type="radio" name="answers" class="choices" value=3>
+				<p id="three" class="pickone"></p>
+
+
+			</div>
+			<button id="next">NEXT</button>
+
+
+		</div>
+		<!-- Multi-line Text Input Control
+		<div id="results">
+			<p class="ready">Your cocktail of the day is ready.</p>
+			<a href="result.html">
+				<button id="shake" type="submit" value="submit">
+					SHAKE IT!
+				</button></a>
+		</div> -->
 	</main>
 	<!--
 		Webpack will automatically link your JS file for you.
 		Work in the src/js folder.
 	-->
+	<div id="resultpage">
+		<section>
+			<h1 class="logo">Mix&Match</h1>
+			<img class="search" src="images/magnifier.png" alt="search">
+			<img class="menu" src="images/menu.png" alt="menu">
+			<div class="mainpic1">
+				<img alt="mainpic"></img>
+			</div>
+			<h2 class="drinkname1"> </h2>
+			<p class="main_content1"> </p>
+			<div class="container1">
+				<ul>
+					<li class="alcohol_name1"> </li>
+					<li class="flavor1"> </li>
+					<li class="alcohol_level1"> </li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3 class="ingre">Ingredients</h3>
+			<ul class="list-ingre">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<p class="allergy">Allergy warning: </p>
+		</section>
+		<section>
+			<h4 class="similar">Similar Drinks</h4>
+			<ul class="list-similar">
+				<li></li>
+				<li></li>
+				<li></li>
+		</section>
+		<a href="survey.html">
+			<button class="button_result1" type="submit" value="submit">
+				Redo the survey
+			</button></a>
+		<a href="index.html">
+			<button class="button_result2" type="submit" value="submit">
+				Back to home
+			</button></a>
+	</div>
+
 </body>
 
 </html>
