@@ -14,9 +14,9 @@ const database = [
     base: 'Gin',
     taste: 'Sweet',
     flavor: 'Fruity',
-    ingredient: ['src/img/gin.jpg', 'src/img/lemon juice.png', 'src/img/soda water.jpg'],
-    pictures: 'src/img/sloe gin fizz/sloe gin fizz.jpg',
-    maincontent: "Tart and sweet come together in perfect harmony to Sloe Gin Fizz. Great for serving at parties or enjoying after a hard day's work, this Sloe Gin Fizz combines soda water, gin, sloe gin and a splash of lemon juice for a refreshingly cool and colorful favorite.",
+    ingredient: ['https://www.thecocktailproject.com/sites/default/files/styles/recipe-ingredient-img/public/gin-1%20copy.jpg?itok=_wDcSaGx', 'https://www.thecocktailproject.com/sites/default/files/styles/recipe-ingredient-img/public/ingredient-lemon_0.jpg?itok=g5Jrw4RR', 'https://www.thecocktailproject.com/sites/default/files/styles/recipe-ingredient-img/public/ingredient-soda-water.jpg?itok=oZOG77YA'],
+    pictures: 'https://www.thecocktailproject.com/sites/default/files/styles/recipe-slider-img/public/Sloe_Gin_Fizz_Table_IMG_9486_Crop.jpg?itok=nPZm54Ea',
+    maincontent: 'Tart and sweet come together in perfect harmony to Sloe Gin Fizz. Great for serving at parties or enjoying after a hard days work, this Sloe Gin Fizz combines soda water, gin, sloe gin and a splash of lemon juice for a refreshingly cool and colorful favorite.',
   },
   {
     id: 1, name: 'Garden Delight', ABV: '>1%~5%', base: 'Gin', taste: 'Sweet', flavor: 'Frozen', ingredient: ['src/img/melon liqueur.png', 'src/img/gin.jpg', 'src/img/tonic water.jpg', 'src/img/cucumber.jpg', 'src/img/rosemary sprigs.jpg'], pictures: 'src/img/garden delight/garden delight.jpg', maincontent: 'Build into a tall glass over ice. Whip the sprig against the glass to release aroma before adding to the glass. Top with tonic water.',
@@ -401,14 +401,11 @@ $(document).ready(() => {
           `<p class="main_content" >${Object.values(same[0])[8]}</p>`,
         );
         $('.list-ingre').html(
-          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li></ul>`,
+          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li>
+          <li><img src="${Object.values(same[0])[6][1]}"></img></li>
+          <li><img src="${Object.values(same[0])[6][2]}"></img></li></ul>`,
         );
-        $('.list-ingre').html(
-          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][1]}"></img></li></ul>`,
-        );
-        $('.list-ingre').html(
-          `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][2]}"></img></li></ul>`,
-        );
+
         $('.list-similar').html(
           `<ul class="list-similar" ><li><img src="${Object.values(similar[0])[7]}"></img></li></ul>`,
         );
