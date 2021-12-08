@@ -6,97 +6,96 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Update your description here" />
-	<title>Find your cocktail</title>
+	<link rel="stylesheet" href="https://use.typekit.net/eve4eso.css">
+	<link rel="stylesheet" href="https://use.typekit.net/tud7wng.css">
+	<title>Mix&Match</title>
 	<!--
-		Webpack will automatically link your CSS file for you.
-		Work in the src/css/styles.scss file.
-	-->
+			Webpack will automatically link your CSS file for you.
+			Work in the src/css/styles.scss file.
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 </head>
 
 <body>
 	<main class="content-container">
 		<div class="fixed">
 			<p class="instr">Please choose your...</p>
-			<img src="images/glass.png" alt="glass">
+			<img id="myImage" src="images/glass.png" alt="glass">
 		</div>
 
-		<!-- Create Form -->
-		<form id="form">
-			<div class="form-control">
-				<label class="choice">ABV </label>
-				<!-- Input Type Checkbox -->
-				<label for="inp-1">
-					<input type="checkbox" name="inp">>30%</input></label>
-				<label for="inp-2">
-					<input type="checkbox" name="inp">15%~30%</input></label>
-				<label for="inp-3">
-					<input type="checkbox" name="inp">1%~15%</input></label>
-				<label for="inp-4">
-					<input type="checkbox" name="inp">0</input></label>
-			</div>
-		</form>
 
-		<form id="form2">
-			<div class="form-control">
-				<label class="choice">BASE</label>
-				<!-- Input Type Checkbox -->
-				<label for="inp-1">
-					<input type="checkbox" name="inp">Gin</input></label>
-				<label for="inp-2">
-					<input type="checkbox" name="inp">Brandy</input></label>
-				<label for="inp-3">
-					<input type="checkbox" name="inp">Whisky</input></label>
-				<label for="inp-4">
-					<input type="checkbox" name="inp">Rum</input></label>
-				<label for="inp-5">
-					<input type="checkbox" name="inp">Vodka</input></label>
-				<label for="inp-6">
-					<input type="checkbox" name="inp">Tequila</input></label>
-			</div>
-		</form>
+		<div id="quiz">
+			<div id="questions"></div>
 
-		<form id="form3">
-			<div class="form-control">
-				<label class="choice">TASTE</label>
-				<!-- Input Type Checkbox -->
-				<label for="inp-1">
-					<input type="checkbox" name="inp">Sweet</input></label>
-				<label for="inp-2">
-					<input type="checkbox" name="inp">Sour</input></label>
-				<label for="inp-3">
-					<input type="checkbox" name="inp">Bitter</input></label>
-				<label for="inp-4">
-					<input type="checkbox" name="inp">Spicy</input></label>
-				<label for="inp-5">
-					<input type="checkbox" name="inp">Salty</input></label>
-			</div>
-		</form>
+			<div name="answersFrame" id="answersFrame" class="1">
+				<input type="radio" name="answers" class="choices" value=0>
+				<p id="zero" class="pickone"></p>
 
-		<form id="form3">
-			<div class="form-control">
-				<label class="choice">FLAVOR</label>
-				<!-- Input Type Checkbox -->
-				<label for="inp-1">
-					<input type="checkbox" name="inp">Flowery</input></label>
-				<label for="inp-2">
-					<input type="checkbox" name="inp">Herbal</input></label>
-				<label for="inp-3">
-					<input type="checkbox" name="inp">Fruity</input></label>
-				<label for="inp-4">
-					<input type="checkbox" name="inp">Milk</input></label>
+				<input type="radio" name="answers" class="choices" value=1>
+				<p id="one" class="pickone"></p>
+
+				<input type="radio" name="answers" class="choices" value=2>
+				<p id="two" class="pickone"></p>
+
+				<input type="radio" name="answers" class="choices" value=3>
+				<p id="three" class="pickone"></p>
+
+
 			</div>
-		</form>
-		<!-- Multi-line Text Input Control -->
-		<p class="ready">Your cocktail of the day is ready.</p>
-		<a href="result.html">
-			<button type="submit" value="submit">
-				SHAKE it!
-			</button></a>
+			<button type="submit" value="Submit" id="next">NEXT</button>
+
+
+		</div>
+
 	</main>
-	<!--
-		Webpack will automatically link your JS file for you.
-		Work in the src/js folder.
-	-->
+
+	<div id="resultshow">
+		<section>
+			<h1 class="logo">Mix&Match</h1>
+			<img class="search" src="images/magnifier.png" alt="search">
+			<img class="menu" src="images/menu.png" alt="menu">
+			<div class="mainpic1">
+			</div>
+			<h2 class="drinkname1"> </h2>
+			<p class="main_content1"> </p>
+			<div class="container1">
+				<ul>
+					<li class="alcohol_name1"> </li>
+					<li class="flavor1"> </li>
+					<li class="alcohol_level1"> </li>
+				</ul>
+			</div>
+		</section>
+		<section>
+			<h3 class="ingre">Ingredients</h3>
+			<ul class="list-ingre">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<p class="allergy">Allergy warning: </p>
+		</section>
+		<section>
+			<h4 class="similar">Similar Drinks</h4>
+			<ul class="list-similar">
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</section>
+
+		<form action="survey.html" method="get">
+			<button class="button_result1" type="submit" value="Submit">Redo the survey</button>
+		</form>
+
+		<form action="index.html" method="get">
+			<button class="button_result2" type="submit" value="Submit">Back to home</button>
+		</form>
+
+	</div>
+
 </body>
 
 </html>

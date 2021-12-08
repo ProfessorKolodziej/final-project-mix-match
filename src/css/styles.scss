@@ -1,86 +1,333 @@
 @import "homepage";
+//@import "resultpage";
 
-@media screen and (max-width: 768px) {
-	.mainpic {
+#resultshow {
+	background-color: white;
+}
+
+.logo {
+	background-color: black;
+	font-size: 30px;
+	color: white;
+	padding: 20px;
+	margin: 0;
+	padding-bottom: 200px;
+	font-family: freight-big-pro, serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+.search {
+	position: absolute;
+	right: 60px;
+	top: 40px;
+	width: 30px;
+	height: 20px;
+	margin-top: -13px;
+	margin-right: 10px;
+}
+
+.menu {
+	position: absolute;
+	right: 20px;
+	top: 37px;
+	width: 30px;
+	height: 25px;
+	margin-top: -13px;
+	margin-right: 5px;
+}
+
+.mainpic1 {
+	text-align: center;
+	margin-top: -130px;
+}
+
+.mainpic1 img {
+	border-radius: 50%;
+	width: 300px;
+	height: 300px;
+	margin: auto 0;
+	margin-top: -20px;
+	margin-right: 50px;
+	object-fit: cover;
+}
+
+.drinkname1 {
+	font-family: freight-big-pro, serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 3em;
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 0;
+	color: black;
+}
+
+.main_content1 {
+	margin-left: 20px;
+	margin-right: 20px;
+	font-family: semplicitapro, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	color: black;
+}
+
+.container1 {
+	text-align: center;
+	margin-left: -20px;
+}
+
+.container1 ul li {
+	display: inline;
+	justify-content: space-around;
+	font-family: semplicitapro, sans-serif;
+	font-weight: 400;
+	font-size: 1.6em;
+	font-style: normal;
+	color: orange;
+	padding: 8%;
+}
+
+.ingre {
+	margin: auto;
+	font-family: semplicitapro, sans-serif;
+	font-size: 20px;
+	color: black;
+	margin-left: 20px;
+}
+
+.list-ingre {
+	list-style-type: none;
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-ingre img {
+	margin-right: 40px;
+	max-width: 50%;
+}
+
+.list-similar {
+	list-style-type: none;
+	display: flex;
+	margin-left: auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.list-similar img {
+	margin-right: 40px;
+	max-width: 50%;
+}
+
+.allergy {
+	text-align: right;
+	margin-right: 20px;
+	font-family: semplicitapro, sans-serif;
+	color: black;
+}
+
+.similar {
+	margin: auto;
+	font-family: semplicitapro, sans-serif;
+	font-size: 20px;
+	color: black;
+	margin-left: 20px;
+}
+
+.button_result1 {
+	display: flex;
+	margin: auto;
+	font-family: freight-big-pro, serif;
+	width: auto;
+	margin-top: 40px;
+	border-width: 1px;
+	border-color: orange;
+	background-color: white;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: orange;
+}
+
+.button_result2 {
+	display: flex;
+	margin: auto;
+	font-family: freight-big-pro, serif;
+	width: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border: orange;
+	background-color: orange;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: white;
+}
+
+/* For Tablet */
+@media screen and (min-width: 768px) {
+	.logo {
+		padding-bottom: 200px;
+	}
+
+	.mainpic1 {
+		margin-top: -200px;
+	}
+
+	.mainpic1 img {
+		width: 330px;
+		height: 330px;
+		margin-top: 30px;
+		margin-right: 50px;
+		position: absolute;
+		right: 20px;
+		object-fit: cover;
+	}
+
+	.drinkname1 {
+		position: relative;
 		text-align: center;
-		margin-top: -140px;
+		margin-top: 220px;
+		font-size: 3.5em;
+		padding-right: 330px;
 	}
 
-	.mainpic img {
-		border-radius: 50%;
-		max-width: 60%;
-		max-height: 80%;
-		margin: auto 0;
-	}
-
-	.drinkname {
-		font-family: freight-big-pro, serif;
-		font-size: 3em;
-		font-weight: bold;
-		font-style: normal;
-		margin-left: 20px;
-		margin-top: 0;
-		margin-bottom: 0;
-	}
-
-	.main_content {
-		margin-left: 20px;
-		margin-right: 20px;
-		font-family: semplicitapro, sans-serif;
-		font-weight: 400;
-		font-style: normal;
-	}
-
-	.container {
+	.main_content1 {
+		font-size: 18px;
 		text-align: center;
-		margin-left: -20px;
+		padding-right: 330px;
 	}
 
-	.container ul li {
-		display: inline;
-		justify-content: space-around;
-		font-family: semplicitapro, sans-serif;
-		font-weight: 400;
-		font-size: 1.6em;
-		font-style: normal;
-		color: orange;
-		padding: 8%;
+	.container1 {
+		margin-top: 40px;
+		font-size: 18px;
 	}
 
 	.ingre {
-		margin-left: 20px;
-	}
-
-	.list-ingre {
-		list-style-type: none;
-		display: flex;
-		vertical-align: middle;
-	}
-
-	.list-ingre img {
-		margin-right: 40px;
-		max-width: 50%;
-	}
-
-	.list-similar {
-		list-style-type: none;
-		display: flex;
-		vertical-align: middle;
-	}
-
-	.list-similar img {
-		margin-right: 40px;
-		max-width: 50%;
+		margin-top: 50px;
+		text-align: center;
+		font-size: 26px;
+		margin-left: 0;
 	}
 
 	.allergy {
-		text-align: right;
-		margin-right: 20px;
+		margin-right: 35px;
 	}
 
 	.similar {
-		margin-left: 20px;
-		vertical-align: middle;
+		font-size: 26px;
+		text-align: center;
+		margin-top: 25px;
+		margin-left: 0;
+	}
+
+	.button_result1 {
+		font-size: 22px;
+		border-width: 1px;
+		border-color: orange;
+		background-color: white;
+		padding: 3px;
+		padding-left: 6px;
+		padding-right: 6px;
+		color: orange;
+	}
+
+	.button_result2 {
+		font-size: 22px;
+		border-width: 1px;
+		border: orange;
+		background-color: orange;
+		padding: 3px;
+		padding-left: 6px;
+		padding-right: 6px;
+		color: white;
+	}
+}
+
+/* For Desktop */
+@media screen and (min-width: 1200px) {
+	.logo {
+		padding: 15px;
+	}
+
+	.mainpic1 {
+		margin-top: auto;
+	}
+
+	.mainpic1 img {
+		border-radius: 0%;
+		width: 500px;
+		height: 500px;
+		margin-right: 50px;
+		object-fit: cover;
+	}
+
+	.drinkname1 {
+		font-size: 70px;
+		position: relative;
+		text-align: center;
+		margin-top: 200px;
+		padding-right: 500px;
+	}
+
+	.main_content1 {
+		margin-left: 150px;
+		margin-right: 660px;
+		margin-top: 46px;
+		font-size: 20px;
+		padding-right: 0;
+	}
+
+	.container1 {
+		margin-top: 170px;
+		font-size: 1vw;
+		text-align: center;
+	}
+
+	.container1 ul li {
+		margin: 90px;
+		padding: 0%;
+	}
+
+	.ingre {
+		font-size: 30px;
+		margin-top: 80px;
+		margin-left: 0;
+	}
+
+	.list-ingre {
+		margin: auto;
+		margin-top: 20px;
+	}
+
+	.allergy {
+		margin-right: 50px;
+	}
+
+	.button_result1 {
+		font-size: 25px;
+		border-width: 1px;
+		border-color: orange;
+		background-color: white;
+		padding: 4px;
+		padding-left: 7px;
+		padding-right: 7px;
+		color: orange;
+	}
+
+	.button_result2 {
+		font-size: 25px;
+		border-width: 1px;
+		border: orange;
+		background-color: orange;
+		padding: 4px;
+		padding-left: 7px;
+		padding-right: 7px;
+		color: white;
 	}
 }
 
@@ -102,7 +349,7 @@ body {
 	}
 }
 
-form {
+/** form {
 	border: 2px solid orange;
 	border-radius: 25px;
 	max-width: 300px;
@@ -112,45 +359,69 @@ form {
 }
 
 /* Styling form-control Class */
-.form-control {
+
+/** .form-control {
 	text-align: left;
 	margin-bottom: 25px;
 }
 
 /* Styling form-control Label */
-.form-control label {
+
+/** .form-control label {
 	display: block;
 	margin-bottom: 10px;
 }
 
 /* Styling form-control Radio
 				 button and Checkbox */
-.form-control input[type="checkbox"] {
+
+/** .form-control input[type="checkbox"] {
 	display: inline-block;
 	width: auto;
 }
 
 .choice {
 	text-align: center;
-}
+} */
 
 .ready {
 	text-align: center;
 }
 
+#quiz {
+	border: 2px solid orange;
+	border-radius: 25px;
+	max-width: 300px;
+	margin: 50px auto;
+	padding: 30px 20px;
+	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#answersFrame input[type="radio"] {
+	display: inline-block;
+	width: auto;
+}
+
+input[type="radio"] {
+	display: inline-block;
+	width: auto;
+}
+
 /* Styling Button */
 button {
-	background-color: orange;
-	border: 1px solid #777;
-	border-radius: 2px;
-	font-family: inherit;
-	font-size: 21px;
-	display: block;
-	width: 120px;
-	margin-top: 50px;
+	display: flex;
+	margin: auto;
+	font-family: freight-big-pro, serif;
+	width: auto;
+	margin-top: 20px;
 	margin-bottom: 20px;
-	margin-left: 38%;
-	cursor: pointer;
+	border-width: 1px;
+	border: orange;
+	background-color: orange;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: white;
 }
 
 a {

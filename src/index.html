@@ -8,27 +8,48 @@
 	<meta name="description" content="Update your description here" />
 	<link rel="stylesheet" href="https://use.typekit.net/tud7wng.css">
 	<title>Mix&Match</title>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
 </head>
 
 <body class="body">
 	<div class="header-container">
 		<h1 class="logo">Mix&Match</h1>
-
-		<button class="search">search</button>
-		<button class="hamburger">hamburger</button>
+		<img class="search" src="images/magnifier.png" alt="search">
+		<img class="menu" src="images/menu.png" alt="menu">
 	</div>
 	<div class="body-container">
 		<div class="tagline-container">
 			<h2 class="tagline">Discover your cocktail of the day</h2>
 		</div>
-		<img class="homepage-img" src="https://i.ibb.co/MZ8Gfff/IMG-4157.jpg" alt="homepage image">
+		<img class="homepage-img" src="images/1.JPG" alt="homepage image1">
+		<img class="homepage-img" src="images/2.jpg" alt="homepage image2">
+		<img class="homepage-img" src="images/3.jpg" alt="homepage image3">
+		<img class="homepage-img" src="images/4.jpg" alt="homepage image4">
 	</div>
 	<div class="start-container">
 		<h3 class="start-text">Make Your Own Cocktail NOW!</h3>
-		<a href="survey.html"><button class="start-button">>>></button></a>
+		<!--<a href="survey.html">
+			<button type="submit" value="Submit" class="start-button">Click Here</button></a>-->
+		<form action="survey.html" method="get">
+			<button type="submit" value="Submit" class="start-button">Click Here</button>
+		</form>
 	</div>
 
-
+	<script>
+		var slideIndex = 0;
+		showSlides();
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("homepage-img");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			slides[slideIndex - 1].style.display = "block";
+			setTimeout(showSlides, 3000);
+		}
+	</script>
 </body>
 
 </html>
