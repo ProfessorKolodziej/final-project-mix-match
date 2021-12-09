@@ -5,7 +5,6 @@
 // }
 // DATABASE
 import $ from 'jquery';
-
 import melonliquerImg from '../images/melon liqueur.png';
 import watermelonliquerImg from '../images/watermelon liqueur.png';
 import ginImg from '../images/gin.jpg';
@@ -360,22 +359,22 @@ const database = [
 
 // QUIZ PART
 const quiz = [
-  {
-    question: 'ABV?',
-    answers: ['>30%', '>15%~30%', '>5%~15%', '>1%~5%'],
-  },
-  {
-    question: 'BASE',
-    answers: ['Gin', 'Bourbon', 'Rum', 'Vodka'],
-  },
-  {
-    question: 'TASTE',
-    answers: ['Sweet', 'Sour', 'Bitter', 'Spicy'],
-  },
-  {
-    question: 'FLAVOR',
-    answers: ['Frozen', 'Mixed', 'Fruity', 'Refreshing'],
-  },
+	{
+		question: 'ABV?',
+		answers: ['>30%', '>15%~30%', '>5%~15%', '>1%~5%'],
+	},
+	{
+		question: 'BASE',
+		answers: ['Gin', 'Bourbon', 'Rum', 'Vodka'],
+	},
+	{
+		question: 'TASTE',
+		answers: ['Sweet', 'Sour', 'Bitter', 'Spicy'],
+	},
+	{
+		question: 'FLAVOR',
+		answers: ['Frozen', 'Mixed', 'Fruity', 'Refreshing'],
+	},
 ];
 
 // SURVEY FUNCTION
@@ -386,69 +385,69 @@ const same = [];
 const similar = [];
 // let uniqsimilar = [];
 $(document).ready(() => {
-  $('#resultshow').hide();
+	$('#resultshow').hide();
+  
+	$('#questions').html(
+		`<h1 style="text-align:center;">${quiz[i].question}</h1>`,
+	);
 
-  $('#questions').html(
-    `<h1 style="text-align:center;">${quiz[i].question}</h1>`,
-  );
+	$('#zero').html(
+		`<p style="text-align:center;">${quiz[i].answers[0]}</p>`,
+	);
 
-  $('#zero').html(
-    `<p style="text-align:center;">${quiz[i].answers[0]}</p>`,
-  );
+	$('#one').html(
+		`<p style="text-align:center;">${quiz[i].answers[1]}</p>`,
+	);
 
-  $('#one').html(
-    `<p style="text-align:center;">${quiz[i].answers[1]}</p>`,
-  );
+	$('#two').html(
+		`<p style="text-align:center;">${quiz[i].answers[2]}</p>`,
+	);
 
-  $('#two').html(
-    `<p style="text-align:center;">${quiz[i].answers[2]}</p>`,
-  );
+	$('#three').html(
+		`<p style="text-align:center;">${quiz[i].answers[3]}</p>`,
+	);
 
-  $('#three').html(
-    `<p style="text-align:center;">${quiz[i].answers[3]}</p>`,
-  );
+	$('.choices').show('slow');
+	$(document).on('click', '#next', () => {
+		const answer = $('input[name="answers"]:checked').val();
+		const answerString = quiz[i].answers[answer];
+		$(`p[class="userAnswer"][value=${i}]`).text(answerString);
 
-  $('.choices').show('slow');
-  $(document).on('click', '#next', () => {
-    const answer = $('input[name="answers"]:checked').val();
-    const answerString = quiz[i].answers[answer];
-    $(`p[class="userAnswer"][value=${i}]`).text(answerString);
+		if (!$('input[name="answers"]').is(':checked')) {
+			$('document').alert('please make a choice');
+			return undefined; // stops executing the rest of the code
+		}
+		i += 1;
+		saved.push(quiz[i - 1].answers[$('input[name="answers"]:checked').val()]);
 
-    if (!$('input[name="answers"]').is(':checked')) {
-      $('document').alert('please make a choice');
-      return undefined; // stops executing the rest of the code
-    }
-    i += 1;
-    saved.push(quiz[i - 1].answers[$('input[name="answers"]:checked').val()]);
+		if (i < 4) {
+			$('#questions').html(
+				`<h1 style="text-align:center;">${quiz[i].question}</h1>`,
+			);
 
-    if (i < 4) {
-      $('#questions').html(
-        `<h1 style="text-align:center;">${quiz[i].question}</h1>`,
-      );
+			$('#zero').html(
+				`<p style="text-align:center;">${quiz[i].answers[0]}</p>`,
+			);
 
-      $('#zero').html(
-        `<p style="text-align:center;">${quiz[i].answers[0]}</p>`,
-      );
+			$('#one').html(
+				`<p style="text-align:center;">${quiz[i].answers[1]}</p>`,
+			);
 
-      $('#one').html(
-        `<p style="text-align:center;">${quiz[i].answers[1]}</p>`,
-      );
+			$('#two').html(
+				`<p style="text-align:center;">${quiz[i].answers[2]}</p>`,
+			);
 
-      $('#two').html(
-        `<p style="text-align:center;">${quiz[i].answers[2]}</p>`,
-      );
+			$('#three').html(
+				`<p style="text-align:center;">${quiz[i].answers[3]}</p>`,
+			);
 
-      $('#three').html(
-        `<p style="text-align:center;">${quiz[i].answers[3]}</p>`,
-      );
+			$('#shake').hide();
+			$('.choices').show();
+			$('input[name="answers"]').prop('checked', false);
+		}
 
-      $('#shake').hide();
-      $('.choices').show();
-      $('input[name="answers"]').prop('checked', false);
-    }
-
-    if (i > 3) {
-      $('#quiz').remove();
+		if (i > 3) {
+			$('#quiz').remove();
 
       $('.fixed').hide();
 
@@ -515,7 +514,7 @@ $(document).ready(() => {
           `<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li>
           <li><img src="${Object.values(same[0])[6][1]}"></img></li>
           <li><img src="${Object.values(same[0])[6][2]}"></img></li></ul>`,
-        );
+				);
 
         $('.list-similar').html(
           `<ul class="list-similar" ><li><img src="${Object.values(similar[1])[7]}"></img></li></ul>`,
@@ -528,4 +527,6 @@ $(document).ready(() => {
     }
     return true;
   });
+			
+
 });
