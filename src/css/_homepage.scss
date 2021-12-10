@@ -22,7 +22,7 @@
 	.tagline {
 		text-align: center;
 		color: #fff;
-		font-size: 45px;
+		font-size: 37px;
 		font-family: freight-big-pro, serif;
 	}
 
@@ -69,6 +69,10 @@
 @media screen and (min-width: 768px) {
 	.tagline-container {
 		width: 80%;
+	}
+
+	.tagline {
+		font-size: 45px;
 	}
 }
 

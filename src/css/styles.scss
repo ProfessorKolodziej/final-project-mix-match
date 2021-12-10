@@ -111,6 +111,20 @@
 	max-width: 50%;
 }
 
+.list-similar ul {
+	margin-left: 20%;
+}
+
+.similar_name {
+	font-family: freight-big-pro, serif;
+	font-weight: 600;
+	font-style: italic;
+	font-size: 1em;
+	color: black;
+	margin-left: 15%;
+	margin-top: 0;
+}
+
 .allergy {
 	text-align: right;
 	margin-right: 20px;
@@ -212,6 +226,10 @@
 		margin-left: 0;
 	}
 
+	.similar_name {
+		font-size: 1.5em;
+	}
+
 	.button_result1 {
 		font-size: 22px;
 		border-width: 1px;
@@ -295,6 +313,10 @@
 		margin-right: 50px;
 	}
 
+	.similar_name {
+		font-size: 1.5em;
+	}
+
 	.button_result1 {
 		font-size: 25px;
 		border-width: 1px;
@@ -342,41 +364,6 @@ body {
 		margin-left: 18%;
 	}
 }
-
-/** form {
-	border: 2px solid orange;
-	border-radius: 25px;
-	max-width: 300px;
-	margin: 50px auto;
-	padding: 30px 20px;
-	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
-}
-
-/* Styling form-control Class */
-
-/** .form-control {
-	text-align: left;
-	margin-bottom: 25px;
-}
-
-/* Styling form-control Label */
-
-/** .form-control label {
-	display: block;
-	margin-bottom: 10px;
-}
-
-/* Styling form-control Radio
-				 button and Checkbox */
-
-/** .form-control input[type="checkbox"] {
-	display: inline-block;
-	width: auto;
-}
-
-.choice {
-	text-align: center;
-} */
 
 .ready {
 	text-align: center;
@@ -449,6 +436,10 @@ a {
 
 button:hover {
 	background-color: grey;
+}
+
+.pickone {
+	display: block;
 }
 
 #zero {
