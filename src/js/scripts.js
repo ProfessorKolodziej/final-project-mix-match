@@ -3,6 +3,7 @@
 // var x, i;
 // x = document.getElementsByClassName
 // }
+
 // DATABASE
 import $ from 'jquery';
 import melonliquerImg from '../images/melon liqueur.png';
@@ -381,9 +382,7 @@ const quiz = [
 let i = 0;
 const saved = [];
 const same = [];
-// let uniqsame = [];
 const similar = [];
-// let uniqsimilar = [];
 $(document).ready(() => {
 	$('#resultshow').hide();
 
@@ -515,11 +514,19 @@ $(document).ready(() => {
 				$('.list-ingre').html(
 					`<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li>
           			<li><img src="${Object.values(same[0])[6][1]}"></img></li>
-          			<li><img src="${Object.values(same[0])[6][2]}"></img></li></ul>`,
+          			<li><img src="${Object.values(same[0])[6][2]}"></img></li>
+					</ul>`,
 				);
 
 				$('.list-similar').html(
-					`<ul class="list-similar" ><li><img src="${Object.values(similar[1])[7]}"></img></li></ul>`,
+					`<ul class="list-similar" >
+					<li>
+					<img src="${Object.values(similar[1])[7]}" alt="alt-text"></img>
+					<p class = "similar_name">
+					${Object.values(similar[1])[1]}
+					</p>
+					</li>
+					</ul>`,
 				);
 			} else {
 				$('.returnbot').show();

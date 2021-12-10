@@ -27,19 +27,25 @@
 			<div id="questions"></div>
 
 			<div name="answersFrame" id="answersFrame" class="1">
+				<label>
+					<input type="radio" name="answers" class="choices" value=0>
+					<span id="zero" class="pickone"></span>
+				</label>
 
-				<input type="radio" name="answers" class="choices" value=0>
-				<div id="zero" class="pickone"></div>
+				<label>
+					<input type="radio" name="answers" class="choices" value=1>
+					<span id="one" class="pickone"></span>
+				</label>
 
-				<input type="radio" name="answers" class="choices" value=1>
-				<div id="one" class="pickone"></div>
+				<label>
+					<input type="radio" name="answers" class="choices" value=2>
+					<span id="two" class="pickone"></span>
+				</label>
 
-				<input type="radio" name="answers" class="choices" value=2>
-				<div id="two" class="pickone"></div>
-
-				<input type="radio" name="answers" class="choices" value=3>
-				<div id="three" class="pickone"></div>
-
+				<label>
+					<input type="radio" name="answers" class="choices" value=3>
+					<span id="three" class="pickone"></span>
+				</label>
 			</div>
 			<button class="next" type="submit" value="Submit" id="next">NEXT</button>
 
@@ -66,21 +72,12 @@
 		<section>
 			<h3 class="ingre">Ingredients</h3>
 			<ul class="list-ingre">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
 			</ul>
 			<p class="allergy">Be Careful of Allergy Items</p>
 		</section>
 		<section>
 			<h4 class="similar">Similar Drinks</h4>
-			<ul class="list-similar">
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			<div class="list-similar"></div>
 		</section>
 
 		<form action="survey.html" method="get">
