@@ -492,23 +492,25 @@ $(document).ready(() => {
 			if (same.length !== 0) {
 				$('#resultshow').show();
 
+				$('.returnbot').hide();
+
 				$('.mainpic1').html(
 					`<img src="${Object.values(same[0])[7]}"></img>`,
 				);
-				$('.drinkname1').html(
-					`<h2 class="drinkname">${Object.values(same[0])[1]}</h2>`,
+				$('.drinkname').html(
+					`<h2 class="drinkname1">${Object.values(same[0])[1]}</h2>`,
 				);
-				$('.alcohol_name1').html(
-					`<li class="alcohol_name">${Object.values(same[0])[1]}</li>`,
+				$('.alcohol_name').html(
+					`<li class="alcohol_name1">${Object.values(same[0])[3]}</li>`,
 				);
-				$('.flavor1').html(
-					`<li class="flavor" >${Object.values(same[0])[5]}</li>`,
+				$('.flavor').html(
+					`<li class="flavor1" >${Object.values(same[0])[5]}</li>`,
 				);
-				$('.alcohol_level1').html(
-					`<li class="alcohol_level" >${Object.values(same[0])[2]}</li>`,
+				$('.alcohol_level').html(
+					`<li class="alcohol_level1" >${Object.values(same[0])[2]}</li>`,
 				);
-				$('.main_content1').html(
-					`<p class="main_content" >${Object.values(same[0])[8]}</p>`,
+				$('.main_content').html(
+					`<p class="main_content1" >${Object.values(same[0])[8]}</p>`,
 				);
 				$('.list-ingre').html(
 					`<ul class="list-ingre" ><li><img src="${Object.values(same[0])[6][0]}"></img></li>
@@ -520,8 +522,9 @@ $(document).ready(() => {
 					`<ul class="list-similar" ><li><img src="${Object.values(similar[1])[7]}"></img></li></ul>`,
 				);
 			} else {
+				$('.returnbot').show();
 				$('.noresult').html(
-					'<p class="nores" > Please forgive us having a small database. Please refresh the page to do the survey again. </p>',
+					'<p class="nores" > Please forgive us having a small database. Please do the survey again. </p>',
 				);
 			}
 		}

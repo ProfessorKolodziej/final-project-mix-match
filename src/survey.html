@@ -29,19 +29,19 @@
 			<div name="answersFrame" id="answersFrame" class="1">
 
 				<input type="radio" name="answers" class="choices" value=0>
-				<p id="zero" class="pickone"></p>
+				<div id="zero" class="pickone"></div>
 
 				<input type="radio" name="answers" class="choices" value=1>
-				<p id="one" class="pickone"></p>
+				<div id="one" class="pickone"></div>
 
 				<input type="radio" name="answers" class="choices" value=2>
-				<p id="two" class="pickone"></p>
+				<div id="two" class="pickone"></div>
 
 				<input type="radio" name="answers" class="choices" value=3>
-				<p id="three" class="pickone"></p>
+				<div id="three" class="pickone"></div>
 
 			</div>
-			<button type="submit" value="Submit" id="next">NEXT</button>
+			<button class="next" type="submit" value="Submit" id="next">NEXT</button>
 
 
 		</div>
@@ -51,17 +51,15 @@
 	<div id="resultshow">
 		<section>
 			<h1 class="logo">Mix&Match</h1>
-			<img class="search" src="images/magnifier.png" alt="search">
-			<img class="menu" src="images/menu.png" alt="menu">
 			<div class="mainpic1">
 			</div>
-			<h2 class="drinkname1"> </h2>
-			<p class="main_content1"> </p>
+			<h2 class="drinkname"> </h2>
+			<p class="main_content"> </p>
 			<div class="container1">
 				<ul>
-					<li class="alcohol_name1"> </li>
-					<li class="flavor1"> </li>
-					<li class="alcohol_level1"> </li>
+					<li class="alcohol_name"> </li>
+					<li class="flavor"> </li>
+					<li class="alcohol_level"> </li>
 				</ul>
 			</div>
 		</section>
@@ -97,6 +95,16 @@
 
 	<div class="noresult">
 		<p class="nores"></p>
+	</div>
+
+	<div class="returnbot">
+		<form action="survey.html" method="get">
+			<button class="button_result1" type="submit" value="Submit">Redo the survey</button>
+		</form>
+
+		<form action="index.html" method="get">
+			<button class="button_result2" type="submit" value="Submit">Back to home</button>
+		</form>
 	</div>
 
 </body>

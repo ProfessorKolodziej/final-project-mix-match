@@ -8,29 +8,6 @@
 		background-color: black;
 	}
 
-	.logo {
-		font-size: 35px;
-		color: #fff;
-		margin-left: 30px;
-		margin-right: 280px;
-	}
-
-	.search {
-		width: 60px;
-		height: 40px;
-		margin-right: 80px;
-		margin-top: -65px;
-		float: right;
-	}
-
-	.menu {
-		width: 60px;
-		height: 40px;
-		float: right;
-		margin-right: 20px;
-		margin-top: -65px;
-	}
-
 	.body-container {
 		height: 700px;
 	}
@@ -46,6 +23,7 @@
 		text-align: center;
 		color: #fff;
 		font-size: 45px;
+		font-family: freight-big-pro, serif;
 	}
 
 	.tagline-container {
@@ -60,12 +38,13 @@
 	.start-container {
 		padding-top: 1em;
 		padding-bottom: 10px;
-		background-color: black;
+		background-color: #1f1c1b;
 	}
 
 	.start-text {
 		margin-top: 2px;
 		font-size: 25px;
+		font-family: semplicitapro, sans-serif;
 		color: orange;
 		text-align: center;
 	}
@@ -74,7 +53,7 @@
 		display: flex;
 		font-size: 19px;
 		text-align: center;
-		width: 90px;
+		width: 300px;
 		height: 30px;
 		margin-bottom: 5px;
 		border-width: 3px;
@@ -95,18 +74,21 @@
 
 @media screen and (min-width: 1200px) {
 	.header-container {
+		padding-top: 5px;
+		padding-bottom: 5px;
 		margin-bottom: 2px;
 		background-color: black;
 	}
 
 	.body-container {
+		margin-top: -7px;
 		display: grid;
 		grid-template-columns: 42% 58%;
-		height: 655px;
+		height: 700px;
 	}
 
 	.homepage-img {
-		height: 655px;
+		height: 700px;
 	}
 
 	.tagline-container {
@@ -117,7 +99,7 @@
 	}
 
 	.tagline {
-		padding-top: 110px;
+		padding-top: 140px;
 		padding-left: 35px;
 		padding-right: 35px;
 		font-size: 75px;

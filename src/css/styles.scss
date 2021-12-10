@@ -6,8 +6,8 @@
 }
 
 .logo {
-	background-color: black;
-	font-size: 30px;
+	background-color: #1f1c1b;
+	font-size: 35px;
 	color: white;
 	padding: 20px;
 	margin: 0;
@@ -17,32 +17,13 @@
 	font-style: normal;
 }
 
-.search {
-	position: absolute;
-	right: 60px;
-	top: 40px;
-	width: 30px;
-	height: 20px;
-	margin-top: -13px;
-	margin-right: 10px;
-}
-
 .nores {
 	font-family: semplicitapro, sans-serif;
 	font-weight: 400;
-	font-size: 5em;
+	font-size: 2em;
 	font-style: normal;
 	color: orange;
-}
-
-.menu {
-	position: absolute;
-	right: 20px;
-	top: 37px;
-	width: 30px;
-	height: 25px;
-	margin-top: -13px;
-	margin-right: 5px;
+	margin-left: 20px;
 }
 
 .mainpic1 {
@@ -54,9 +35,8 @@
 	border-radius: 50%;
 	width: 300px;
 	height: 300px;
-	margin: auto 0;
 	margin-top: -20px;
-	margin-right: 50px;
+	margin-right: -20px;
 	object-fit: cover;
 }
 
@@ -64,7 +44,7 @@
 	font-family: freight-big-pro, serif;
 	font-weight: 600;
 	font-style: normal;
-	font-size: 3em;
+	font-size: 2em;
 	margin-left: 20px;
 	margin-top: 10px;
 	margin-bottom: 0;
@@ -74,6 +54,7 @@
 .main_content1 {
 	margin-left: 20px;
 	margin-right: 20px;
+	margin-top: -10px;
 	font-family: semplicitapro, sans-serif;
 	font-weight: 400;
 	font-style: normal;
@@ -90,10 +71,10 @@
 	justify-content: space-around;
 	font-family: semplicitapro, sans-serif;
 	font-weight: 400;
-	font-size: 1.6em;
+	font-size: 1.2em;
 	font-style: normal;
 	color: orange;
-	padding: 8%;
+	margin: 10px;
 }
 
 .ingre {
@@ -151,13 +132,13 @@
 	font-family: freight-big-pro, serif;
 	width: auto;
 	margin-top: 40px;
-	border-width: 1px;
-	border-color: orange;
+	border: 2px solid orange;
 	background-color: white;
 	padding: 2px;
 	padding-left: 5px;
 	padding-right: 5px;
 	color: orange;
+	font-size: 1.4em;
 }
 
 .button_result2 {
@@ -174,14 +155,11 @@
 	padding-left: 5px;
 	padding-right: 5px;
 	color: white;
+	font-size: 1.4em;
 }
 
 /* For Tablet */
 @media screen and (min-width: 768px) {
-	.logo {
-		padding-bottom: 200px;
-	}
-
 	.mainpic1 {
 		margin-top: -200px;
 	}
@@ -200,7 +178,7 @@
 		position: relative;
 		text-align: center;
 		margin-top: 220px;
-		font-size: 3.5em;
+		font-size: 2.6em;
 		padding-right: 330px;
 	}
 
@@ -208,22 +186,12 @@
 		font-size: 18px;
 		text-align: center;
 		padding-right: 330px;
+		margin-top: 0;
 	}
 
 	.container1 {
 		margin-top: 40px;
-		font-size: 18px;
-	}
-
-	.container1 ul li {
-		display: inline;
-		justify-content: space-around;
-		font-family: semplicitapro, sans-serif;
-		font-weight: 400;
-		font-size: 1.6em;
-		font-style: normal;
-		color: orange;
-		padding: 8%;
+		font-size: 1.7em;
 	}
 
 	.ingre {
@@ -303,20 +271,13 @@
 
 	.container1 {
 		margin-top: 170px;
-		font-size: 1vw;
 		text-align: center;
 	}
 
 	.container1 ul li {
-		margin: 90px;
+		margin: 40px;
 		padding: 0%;
-		display: inline;
-		justify-content: space-around;
-		font-family: semplicitapro, sans-serif;
-		font-weight: 400;
-		font-size: 1.6em;
-		font-style: normal;
-		color: orange;
+		font-size: 1.2em;
 	}
 
 	.ingre {
@@ -363,6 +324,13 @@ body {
 	background-color: #211d1d;
 	text-align: left;
 	color: white;
+	margin: 0;
+}
+
+.instr {
+	font-family: semplicitapro, sans-serif;
+	font-size: 30px;
+	margin-left: 40px;
 }
 
 .fixed {
@@ -421,6 +389,8 @@ body {
 	margin: 50px auto;
 	padding: 30px 20px;
 	box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+	font-size: 1.2em;
+	font-family: semplicitapro, sans-serif;
 }
 
 #answersFrame input[type="radio"] {
@@ -434,7 +404,24 @@ input[type="radio"] {
 }
 
 /* Styling Button */
-button {
+.next {
+	display: flex;
+	margin: auto;
+	font-family: freight-big-pro, serif;
+	font-size: 1.5em;
+	width: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border: orange;
+	background-color: orange;
+	padding: 2px;
+	padding-left: 5px;
+	padding-right: 5px;
+	color: white;
+}
+
+.start-button {
 	display: flex;
 	margin: auto;
 	font-family: freight-big-pro, serif;
@@ -461,5 +448,25 @@ a {
 }
 
 button:hover {
-	background-color: white;
+	background-color: grey;
+}
+
+#zero {
+	margin-top: -43px;
+	margin-bottom: 30px;
+}
+
+#one {
+	margin-top: -43px;
+	margin-bottom: 30px;
+}
+
+#two {
+	margin-top: -43px;
+	margin-bottom: 30px;
+}
+
+#three {
+	margin-top: -43px;
+	margin-bottom: 30px;
 }
